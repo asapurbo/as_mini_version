@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 const QuizFeature = () => {
     return (
-        <a href="./Quizzes.html" className="dashboard-item-card">
+        <Link to="/admin/quizzes" className="dashboard-item-card">
             <svg
                 fill="none"
                 viewBox="0 0 24 24"
@@ -15,7 +17,7 @@ const QuizFeature = () => {
                 />
             </svg>
             <p className="text-slate-200 mt-3 ">Quizzes</p>
-        </a>
+        </Link>
     );
 };
 

@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 const VideoFeature = () => {
     return (
-        <a href="./Videos.html" className="dashboard-item-card">
+        <Link to="/admin/videos" className="dashboard-item-card">
             <svg
                 fill="none"
                 viewBox="0 0 24 24"
@@ -15,7 +17,7 @@ const VideoFeature = () => {
             </svg>
 
             <p className="text-slate-200 mt-3 ">Videos</p>
-        </a>
+        </Link>
     );
 };
 

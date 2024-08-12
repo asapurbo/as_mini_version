@@ -1,4 +1,5 @@
 import Form from "../../admin/login/Form";
+import logo from '../../../assets/x.png'
 
 const Login = () => {
     return (
@@ -7,7 +8,7 @@ const Login = () => {
                 <div>
                     <img
                         className="h-12 mx-auto"
-                        src="../assets/image/learningportal.svg"
+                        src={logo}
                     />
                     <h2 className="mt-6 text-center text-3xl font-extrabold text-slate-100">
                         Sign in to Admin Account

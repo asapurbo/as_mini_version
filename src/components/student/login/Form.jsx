@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Form = () => {
     return (
         <form className="mt-8 space-y-6" action="#" method="POST">
@@ -35,12 +37,12 @@ const Form = () => {
 
             <div className="flex items-center justify-end">
                 <div className="text-sm">
-                    <a
+                    <Link to='/registration'
                         href="./StudentReistration.html"
                         className="font-medium text-violet-600 hover:text-violet-500"
                     >
                         Create New Account
-                    </a>
+                    </Link>
                 </div>
             </div>
 
