@@ -1,7 +1,10 @@
+import _Videos from "./components/pages/adminPages/_Videos"
+
+
 
 const App = () => {
   return (
-    <div>App</div>
+    <_Videos />
   )
 }
 
