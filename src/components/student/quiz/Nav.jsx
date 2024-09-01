@@ -1,7 +1,11 @@
 // dependecies
+import { useSelector } from 'react-redux';
 import logo from '../../../assets/x.png'
 
 const Nav = () => {
+    const {name} = useSelector(state => state?.userReducer?.user)
+
+
     return (
         <nav className="shadow-md">
             <div className="max-w-7xl px-5 lg:px-0 mx-auto flex justify-between py-3">
@@ -10,7 +14,7 @@ const Nav = () => {
                     src={logo}
                 />
                 <div className="flex items-center gap-3">
-                    <h2 className="font-medium">Saad Hasan</h2>
+                    <h2 className="font-medium capitalize">{name}</h2>
                     <button className="flex gap-2 items-center px-4 py-1 rounded-full text-sm transition-all bg-red-600 hover:bg-red-700 font-medium">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"

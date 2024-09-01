@@ -1,0 +1,32 @@
+for (let w = 0; w <= quizDataMarkData.length; w++) {
+
+                if (quizDataMarkData[w]) {
+                    const quizDataMarkDataArray = Object.values(
+                        quizDataMarkData[w]
+                    );
+
+                    const itQuizArray = quizDataMarkDataArray?.filter(i => typeof i === 'object' && i !== null)
+
+                    // console.log(itQuizArray);
+
+
+                    // console.log(quizDataMarkDataArray[0]?.student_id);
+                    for (let k = 0; k <= assignmentMarkData.length; k++) {
+                        if (assignmentMarkData[k]) {
+                            const assignmentMarkDataArray = Object.values(
+                                assignmentMarkData[k]
+                            );
+
+                            const itAssignmentArray = assignmentMarkDataArray?.filter(i => typeof i === 'object' && i !== null)
+                            // console.log(itAssignmentArray);
+                            console.log(itAssignmentArray[k]);
+
+
+                            if(itQuizArray[w]?.student_id === itAssignmentArray[k]?.student_id) {
+                                console.log(quizDataMarkData[w]);
+
+                            }
+                        }
+                    }
+                }
+            }
